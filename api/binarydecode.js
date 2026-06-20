@@ -1,5 +1,5 @@
 function BinaryDecode(text) {
-    return binaryStr.split(' ').map(bin => {
+    return text.split(' ').map(bin => {
         if (/^[01]{8}$/.test(bin)) { 
             return String.fromCharCode(parseInt(bin, 2));
         }
