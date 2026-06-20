@@ -1,5 +1,5 @@
 function BinaryEncode(text) {
-    res.body = text.split('').map(char => {
+    return text.split('').map(char => {
         return char.charCodeAt(0).toString(2).padStart(8, '0');
     }).join(' ');
 }
